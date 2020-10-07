@@ -27,6 +27,26 @@
 .App-link {
   color: #61dafb;
 }
+.nav-bar {
+  background-color: lightgrey;
+  text-align: left;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: aliceblue;
+}
+.link {
+  margin: 10px;
+  vertical-align: middle;
+}
+.links {
+  width: 80%;
+}
+.signout {
+  position: fixed;
+  top: 10px;
+  right: 0px;
+  width: 20%;
+}
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +55,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.space {
+  padding: 10px;
 }
