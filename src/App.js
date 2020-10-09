@@ -5,8 +5,6 @@ import PageNotFound from "./PageNotFound";
 import Home from "./Home";
 import Profile from "./Profile";
 import Login from "./Login";
-import PrivateRoute from "./PrivateRoute";
-import AuthenticationRoute from "./AuthenticationRoute";
 import { connect } from "react-redux";
 import Signout from "./Firebase/Components/Signout";
 

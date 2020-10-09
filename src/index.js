@@ -3,8 +3,6 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import firebase from "./Firebase";
-// import { history } from "./App";
 import { Provider } from "react-redux";
 import store from "./reduxStrore/index";
 let hasAppRendered = false;
