@@ -7,6 +7,8 @@ import Profile from "./Profile";
 import Login from "./Login";
 import { connect } from "react-redux";
 import Signout from "./Firebase/Components/Signout";
+import AuthenticationRoute from './AuthenticationRoute';
+import PrivateRoute from './PrivateRoute';
 
 class App extends React.Component {
   render() {
@@ -32,8 +34,8 @@ class App extends React.Component {
           <Switch>
             <Route path="/" component={Home} exact={true} />
             <Route path="/home" component={Home} exact={true} />
-            <Route path="/profile" component={Profile} exact={true} />
-            <Route path="/login" component={Login} exact={true} />
+            <PrivateRoute path="/profile" component={Profile} exact={true} />
+            <AuthenticationRoute path="/login" component={Login} exact={true} />
             <Route component={PageNotFound} />
           </Switch>
         </BrowserRouter>

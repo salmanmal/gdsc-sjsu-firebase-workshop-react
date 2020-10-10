@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import firebase from "../index";
 
 export default class EmailIdLogin extends Component {
   constructor(props) {
@@ -16,10 +16,29 @@ export default class EmailIdLogin extends Component {
     e.preventDefault();
     const { email, password } = this.state;
     // Handle signinwith email and password
+    firebase
+      .auth()
+      .signInWithEmailAndPassword(email, password)
+      .catch(function (error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        alert(errorMessage);
+      });
   };
   signup = (e) => {
     const { email, password } = this.state;
     // Handle signup with email and password
+
+    firebase
+      .auth()
+      .createUserWithEmailAndPassword(email, password)
+      .catch(function (error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        alert(errorMessage);
+      });
   };
   render() {
     return (
