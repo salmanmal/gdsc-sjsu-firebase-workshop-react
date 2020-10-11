@@ -1,6 +1,6 @@
 
 [Presentation](https://github.com/salmanmal/gdsc-sjsu-firebase-workshop-react/blob/master/Firebase_Authentication_Workshop_GDSC_SJSU.pdf)
-
+[Workshop Recording](https://www.youtube.com/watch?v=fFZuyg4TXR4)
 ## Install Dependencies
 ### `npm install`
 
